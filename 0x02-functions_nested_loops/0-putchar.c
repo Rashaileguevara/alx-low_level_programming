@@ -1,17 +1,16 @@
 #include "main.h"
 /**
-* main - Prints _putchar as a message.
-*
-* Return: Always 0 (Success)
-*/
+* main - entry block
+* @void: no argument
+* Return: 0
+**/
 int main(void)
-int str[] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
-int count, sz;
-sz = sizeof(str) / sizeof(int);
-for (count = 0; count < sz; count++)
 {
-_putchar(str[count]);
+char haile[] = "_putchar";
+int c;
+for (c = 0; c < 8; c++)
+{
+_putchar(haile[c]);
 }
-_putchar('\n');
 return (0);
 }
